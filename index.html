@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <script src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <title>Player Lookup</title>
+    <link rel="stylesheet" href="template.css" />
+  </head>
+  <body style="background-color:rgb(225, 229, 233)">
+    <div class="header">
+      <h1>Quick Player Stat Lookup</h1>
+      <p>
+        A place to look up a basketball players and their stats!
+      </p>
+    </div>
+
+    <div class="SearchBar">
+      <div class="search">
+        <input id="NameInput" type="text" class="searchTerm" placeholder="Last Name, First Name" />
+        <button type="submit" class="searchButton" onclick="processPlayer()">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <div class="playerContainer">
+      <div class="playerHeader">
+        <img class="profile_picture" id="profile_picture" src="defaulter.jpg" />
+        <div class="playerInfo">
+          <h4>Player Name:</h4>
+          <h4 id="playerName"></h4>
+        </div>
+        <div class="playerInfo">
+          <h4>Player Id:</h4>
+          <h4 id="playerId"></h4>
+        </div>
+      </div>
+
+      <div class="PlayerStats">
+        <table>
+          <tr>
+            <th>Points</th>
+            <th>Rebounds</th>
+            <th>Assists</th>
+            <th>Steals</th>
+            <th>Blocks</th>
+            <th>Field Goal %</th>
+            <th>Free Throw %</th>
+            <th>Turnovers</th>
+            <th>Minutes</th>
+          </tr>
+          <tr>
+            <td id="ppg"></td>
+            <td id="rpg"></td>
+            <td id="apg"></td>
+            <td id="spg"></td>
+            <td id="bpg"></td>
+            <td id="fgp"></td>
+            <td id="ftp"></td>
+            <td id="topg"></td>
+            <td id="mpg"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

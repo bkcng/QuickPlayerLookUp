@@ -1,0 +1,98 @@
+body {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00b4cc;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.searchButton {
+  width: "Auto";
+  height: 36px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.SearchBar {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+.playerContainer {
+  padding: 20px 20px 20px 20px;
+  border: black;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  display: inline-flex;
+}
+
+.playerHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border: 10px;
+}
+
+.profile_picture {
+  border: 1px solid #9dbfaf;
+  border-radius: 4px;
+  margin: 5px 20px 0px 5px;
+  width: 140px;
+}
+
+.playerInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: chocolate;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
